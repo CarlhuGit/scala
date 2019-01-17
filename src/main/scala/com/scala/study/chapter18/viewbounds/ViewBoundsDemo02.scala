@@ -28,6 +28,7 @@ class Person(val name: String, val age: Int) extends Ordered[Person] {
 //比较Cat的名字的长度大小
 class Cat(val name:String) extends Ordered[Cat] {
   override def compare(that: Cat): Int = {
+
     this.name.length - that.name.length
   }
 }
